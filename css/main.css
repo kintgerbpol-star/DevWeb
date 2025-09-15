@@ -1,0 +1,139 @@
+/* ===== Paleta cálida refinada =====
+   Rojo principal:   #D32F2F
+   Rojo oscuro:      #B71C1C
+   Naranja cálido:   #F57C00
+   Dorado suave:     #FBC02D
+   Beige claro:      #FFF8F0
+   Gris neutro:      #444
+==================================== */
+
+/* ===== Reset general ===== */
+body {
+  background: url('../img/fondo-textura.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #444;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  position: relative;
+}
+
+/* Overlay para suavizar la imagen */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 248, 240, 0.8); /* beige con transparencia */
+  z-index: -1;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: #D32F2F !important;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand, 
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #FBC02D !important;
+}
+
+/* ===== Contenido principal ===== */
+main {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ===== Botones ===== */
+.btn-primary {
+  background-color: #F57C00 !important;
+  border-color: #F57C00 !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #E64A19 !important;
+  border-color: #E64A19 !important;
+}
+
+/* ===== Tarjetas ===== */
+.card {
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #D32F2F, #F57C00);
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ===== Formularios ===== */
+.form-control {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.form-control:focus {
+  border-color: #D32F2F;
+  box-shadow: 0 0 6px rgba(211, 47, 47, 0.5);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #B71C1C;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+  border-top: 4px solid #F57C00;
+}
+/* ===== Estilos Sidebar ===== */
+.sidebar {
+  background: #f8e0d4; /* tono cálido suave */
+  border-right: 2px solid #e07b39;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar h5 {
+  font-weight: bold;
+  color: #b33c00;
+  border-bottom: 1px solid #e07b39;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 15px;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #663300;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar a:hover {
+  background-color: #e07b39;
+  color: #fff;
+  transform: translateX(5px);
+}

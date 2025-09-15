@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablero</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="p-3">
+  <h2 class="mb-4">Monitoreo y seguimiento de proyectos</h2>
+
+  <!-- Métricas -->
+  <div class="row g-3 mb-4">
+    <div class="col-6 col-md-3">
+      <div class="card bg-success text-white card-metric">
+        <h3>8</h3><p>Activos</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card bg-primary text-white card-metric">
+        <h3>12</h3><p>Completados</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card bg-danger text-white card-metric">
+        <h3>4</h3><p>Retrasados</p>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card bg-secondary text-white card-metric">
+        <h3>9</h3><p>Recursos</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gráficos simulados -->
+  <div class="row g-3 mb-4">
+    <div class="col-md-4">
+      <div class="card p-3">
+        <h6>Gráfico de barras</h6>
+        <iframe src="enconstruccion.html" 
+                width="100%" height="150" frameborder="0"></iframe>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-3">
+        <h6>Gráfico de pastel</h6>
+        <iframe src="enconstruccion.html" 
+                width="100%" height="150" frameborder="0"></iframe>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-3">
+        <h6>Imagen ilustrativa</h6>
+        <iframe src="enconstruccion.html" 
+                width="100%" height="150" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabla -->
+  <div class="card">
+    <div class="card-header">Proyectos</div>
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr><th>Proyecto</th><th>Estado</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Lorem ipsum dolor</td><td>En proceso</td></tr>
+          <tr><td>Consectetur elit</td><td>Completado</td></tr>
+          <tr><td>Sed do eiusmod</td><td>Retrasado</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
